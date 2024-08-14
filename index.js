@@ -17,7 +17,7 @@ app.post('/todos', (req, res) => {
     console.log(req.body); // Log the incoming request body
     const todo = {
         id: todos.length + 1,
-        title: req.body.task, // Use task if that's the intended field
+        title: req.body.title, // Use task if that's the intended field
         completed: false
     };
     todos.push(todo);
